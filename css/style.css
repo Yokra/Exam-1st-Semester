@@ -1,0 +1,642 @@
+
+
+/* --------------styling for about------------------------*/
+
+
+
+.container-about {
+    height: 100vh;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 100px 1fr 50px 1fr 100px;
+    grid-template-rows: 60px auto;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 1/6;
+    list-style-type: none;
+    overflow: auto;
+    background-color: #e7f3f8;
+
+
+}
+
+
+
+.menu-item {
+
+
+    color: black;
+    text-align: center;
+    font-family: 'Bungee Shade', regular;
+    font-size: 25px;
+    padding: 14px 43px;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    background-color: rgba(221, 50, 50, 0.98);
+}
+
+
+
+
+.content1 {
+    grid-column: 2/3;
+
+}
+
+.content2 {
+    grid-column: 4/5;
+}
+
+
+
+.footer {
+    grid-column: 1/6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #e7f3f8;
+    text-align: center;
+
+}
+
+.flower {
+    width: 46px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+
+
+}
+
+.p {
+
+    margin-bottom: 4px;
+}
+
+#about-body {
+    background-image: url(../images/rays.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+}
+
+.box {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+
+}
+
+.box2 {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+
+}
+
+.in {
+    margin-top: 15px;
+    width: 27%;
+
+}
+
+
+
+/* --------------styling for index------------------------*/
+
+.container-home {
+    height: 100vh;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 100px 1fr 50px 1fr 100px;
+    grid-template-rows: 60px 400px 100px;
+
+}
+
+#rays {
+    background-image: url(../images/rays.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.robot-grid {
+    grid-column: 2/3;
+
+}
+
+.hello-grid {
+    grid-column: 4/5;
+}
+
+.float-grid {
+    grid-column: 1/6;
+
+    grid-row: 3/4;
+
+    width: 100%;
+}
+
+
+
+#robot {
+    margin-top: 40px;
+    margin-left: 55px;
+    width: 330px;
+    height: auto;
+
+
+}
+
+#robot:hover {
+    cursor: pointer;
+    animation: glow 3s ease-in-out forwards;
+}
+
+@keyframes glow {
+    from {
+        filter: drop-shadow(0px 0px 10px yellow);
+    }
+}
+
+
+
+#hello {
+
+    margin-top: 20px;
+    height: 300px;
+}
+
+.clouds {
+
+    width: 100%;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes floating {
+    from {
+        transform: translate(0, 0px);
+    }
+    65% {
+        transform: translate(0, 15px);
+    }
+    to {
+        transform: translate(0, -0px);
+    }
+}
+
+
+/*-------------------styling for portfolio------------------*/
+
+.container-portfolio {
+    /*height: 190vh;*/
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 40px 330px 330px 330px 100px 250px;
+
+}
+
+.project1 {
+    grid-column: 2;
+    grid-row: 3;
+
+}
+
+.project2 {
+    grid-column: 3;
+    grid-row: 3;
+
+
+}
+
+.project3 {
+    grid-column: 4;
+    grid-row: 3;
+
+}
+
+.project4 {
+    grid-column: 2;
+    grid-row: 4;
+
+}
+
+.project5 {
+    grid-column: 3;
+    grid-row: 4;
+
+}
+
+.project6 {
+    grid-column: 4;
+    grid-row: 4;
+
+}
+
+.project7 {
+    grid-column: 2;
+    grid-row: 5;
+
+}
+
+.project8 {
+    grid-column: 3;
+    grid-row: 5;
+}
+
+.project9 {
+    grid-column: 4;
+    grid-row: 5;
+
+}
+
+
+div.project {
+
+    margin: 10px;
+    border: 1px solid #ccc;
+
+    width: 310px;
+    height: 310px;
+
+}
+
+div.project:hover {
+    border: 1px solid #777;
+    opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+div.project img {
+    width: 100%;
+    height: 80%;
+
+}
+
+
+
+div.text{
+    font-family: sans-serif;
+    padding: 14px;
+    text-align: center;
+    font-size: 17px;
+    
+}
+
+.pdf{
+    grid-column:1/6;
+    grid-row: 7;
+    
+
+}
+
+
+
+
+/*-----------media for small screen----------*/
+
+@media screen and (max-width: 37em) {
+
+    .container-about {
+
+        height: 150vh;
+        display: block;
+    }
+    .container-home {
+
+        height: 150vh;
+        display: block;
+    }
+    .container-portfolio {
+
+       /* height: 450vh;*/
+        display: block;
+
+
+    }
+
+
+    .menu-item {
+
+        font-size: 20px;
+        padding: 8px;
+                /* :21px;*/
+    }
+
+    .content1 {
+        width: 90%;
+        margin-left: 20px;
+
+    }
+
+    .content2 {
+        width: 90%;
+        margin-left: 20px;
+
+    }
+
+    .content3 {
+
+        width: 350px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+
+    .footer {
+        grid-column: 1/6;
+        display: flex;
+
+    }
+    .flower {
+        width: 6%;
+    }
+
+
+    #robot {
+        margin-left: 10px;
+        width: 200px;
+
+
+
+    }
+
+    #hello {
+
+        float: right;
+        height: 100px;
+
+        margin-top: -250px;
+        margin-right: 68px;
+
+    }
+
+    .clouds {
+        margin-top: -30px;
+        width: 100%;
+
+    }
+
+    .project1 {
+        margin-left: 27px;
+
+
+
+    }
+
+    .project2 {
+        margin-left: 27px;
+
+
+
+    }
+
+    .project3 {
+        margin-left: 27px;
+
+
+
+    }
+
+    .project4 {
+        margin-left: 27px;
+
+
+    }
+
+    .project5 {
+        margin-left: 27px;
+
+
+    }
+
+    .project6 {
+        margin-left: 27px;
+
+
+    }
+
+    .project7 {
+        margin-left: 27px;
+
+
+    }
+
+    .project8 {
+        margin-left: 27px;
+
+    }
+
+    .project9 {
+        margin-left: 27px;
+
+
+    }
+
+
+
+
+
+
+}
+
+/*-----------media for tablet screen----------*/
+
+@media screen and (max-width: 48em) and (min-width: 37em) {
+
+    .container-about {
+        height: 170vh;
+        display: block;
+    }
+    .container-home {
+
+        height: 150vh;
+        display: block;
+    }
+    .container-portfolio {
+
+        /*height: 300vh;*/
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 60px 1fr 1fr 1fr 1fr 400px;
+    }
+
+
+    .menu-item {
+
+        font-size: 25px;
+        padding: 14px;
+        /*25px;*/
+    }
+
+    .content1 {
+        width: 90%;
+        margin-left: 31px;
+
+    }
+
+    .content2 {
+        width: 90%;
+        margin-left: 31px;
+    }
+
+    .content3 {
+        width: 450px;
+        margin-top: 10px;
+        margin-left: 31px;
+
+
+    }
+
+
+    .footer {
+        grid-column: 1/6;
+        display: flex;
+
+    }
+    .flower {
+        width: 6%;
+        margin-top: 14px;
+    }
+
+    #robot {
+        margin-left: 130px;
+        width: 230px;
+
+
+
+    }
+
+    #hello {
+
+        float: right;
+        height: 170px;
+
+        margin-top: -290px;
+        margin-right: 68px;
+
+    }
+
+    .clouds {
+        margin-top: -40px;
+        width: 100%;
+
+    }
+
+    .project1 {
+        grid-column: 1;
+        grid-row: 2;
+
+
+
+
+    }
+
+    .project2 {
+        grid-column: 2;
+        grid-row: 2;
+
+
+
+
+
+    }
+
+    .project3 {
+        grid-column: 1;
+        grid-row: 3;
+
+
+
+
+    }
+
+    .project4 {
+        grid-column: 2;
+        grid-row: 3;
+
+
+
+    }
+
+    .project5 {
+        grid-column: 1;
+        grid-row: 4;
+
+
+
+    }
+
+    .project6 {
+        grid-column: 2;
+        grid-row: 4;
+
+
+
+    }
+
+    .project7 {
+        grid-column: 1;
+        grid-row: 5;
+
+
+
+    }
+
+    .project8 {
+        grid-column: 2;
+        grid-row: 5;
+
+
+    }
+
+    .project9 {
+        grid-column: 1;
+        grid-row: 6;
+
+
+
+    }
+    
+    .pdf{
+    
+    grid-row: 8;
+    
+}
+
+
+}

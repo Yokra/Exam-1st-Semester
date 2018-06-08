@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/flower.png">
+    <link href="css/style.css" rel="stylesheet">
+    
+
+
+    <title>TevaDesign</title>
+    
+    
+
+           
+    
+
+
+</head>
+
+<body>
+    
+    
+
+
+   <div id="rays" class="container-home">
+        <div class="header">
+             <a href="index.html" class="menu-item">home</a>
+            <a href="portfolio.html" class="menu-item">portfolio</a>
+            <a href="about.html" class="menu-item current">about</a>
+            
+           
+            
+        </div>
+
+
+        <div class= "robot-grid"><img id=robot onclick="toggleBoth()" src="images/robot.png" alt="robot"></div>
+
+        <div class="hello-grid"><img id=hello onclick="toggleBoth()" style="display:none;" src="images/hello.png" alt="hello"></div>
+
+       <div class="float-grid"><img class=clouds src="images/clouds.png" alt="clouds"></div>
+       
+   </div>
+    
+
+
+    <footer class="footer">
+         <img class="flower" src="images/flower.png" alt="flower">
+        <p class="p"> &copy; 2018</p>
+    </footer>
+    
+
+    
+
+
+
+</body>
+<script>
+    function toggleImage(id) {
+        var image = document.getElementById(id);
+        image.style.display = image.style.display == "none" ? "block" : "none";
+    }
+
+    function toggleBoth() {
+
+        toggleImage('hello')
+    }
+</script>
+
+
+
+</html>
